@@ -28,6 +28,8 @@ HelloTremaクラス内のstart関数を変更する。
 ```
  logger.info "#{self.class.name} started."
 ```
-self.class.nameはインスタンス内からそのクラス名を表している。
-これをlogger.infoで表示する。
+self.class.nameはインスタンス内からそのクラス名にアクセスできる。
+これをlogger.infoで表示する。  
+また、Trema::Controllerにはそのクラスの名前を表すインスタンス変数
+@nameが存在し、self.nameでアクセスできるためこれを表示してもよい。
 
